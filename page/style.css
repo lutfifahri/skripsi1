@@ -1,0 +1,13 @@
+body{   background:url('https://cdn.pixabay.com/photo/2015/03/26/09/47/sky-690293__340.jpg');
+    background-size:cover;
+  }
+  .transparent{
+    background:rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height:350px;
+    padding:10px;
+    margin:0px auto;
+    color:#fff;
+    text-align:center;
+  }
+  .transparent h1{margin:0}

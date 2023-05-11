@@ -1,0 +1,43 @@
+RewriteEngine on  
+ 
+# halaman utama
+RewriteRule ^dashboard$ dashboard.php  
+RewriteRule ^Pelanggan$ Pelanggan.php  
+
+# registrasi mulai
+# Master PO
+RewriteRule ^Po_tempahan$ Po_tempahan.php
+RewriteRule ^Po_produksi$ Po_produksi.php
+RewriteRule ^Po_service$ Po_service.php
+# registrasi selesai
+
+# Master Spk Tempahan
+RewriteRule ^spk_tempahan$ spk_tempahan.php
+RewriteRule ^spk_produksi$ spk_produksi.php
+RewriteRule ^spk_reparasi$ spk_reparasi.php
+
+RewriteRule ^DataUser$ DataUser.php
+RewriteRule ^UbahDataUser$ UbahDataUser.php
+# Master selesai
+
+# Terima Service
+RewriteRule ^Laporan$ Laporan.php
+RewriteRule ^LaporanP$ LaporanP.php
+RewriteRule ^LaporanS$ LaporanS.php
+# Terima Service Selesai
+
+RewriteRule ^center servicectr/img [NC,L]
+
+
+# Deny access to .htaccess
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+
+# Disabled direktory browsing
+options -Indexes 
+
+# Hide the contents of directories
+IndexIgnore *
